@@ -1,0 +1,42 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<title> Wikiviwer App </title>
+		<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+		<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' />	
+		<link rel="stylesheet" href="style.css">
+	
+	</head>
+	<body>
+	<div class="container-fluid">
+		<div id="sec1">
+			<h1 style="font-size:55px"> Wikipedia viwer App</h1>
+			<h2 id="days"></h2>
+		</div>
+		<div id="sec2">
+		<button class="randomarticlebutton">	<center> <a href="https://en.wikipedia.org/wiki/Special:Random" <span style="color:lightseagreen" id="li" target="_blank"> Click here to get a Random article</span></a></center></button>
+		</div>		
+		<div id="sec3">
+			<br></br>
+			<center>
+				<form id="myform">
+					<div class="form-group">
+						<input type="search" value="" class="form-control article" id="myInput" style="width:50%" name="q" placeholder="Click for search"
+						 required>
+						<br><br>
+						<button class="btn btn-info" type="submit" id="bb">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+						<ul id="unorderlist" class="search-result-container">
+							
+						</ul>
+					</div>
+				</form>
+			</center>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js">
+
+	</script>
+	</body>
+</html>
