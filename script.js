@@ -26,7 +26,18 @@ window.onload = function () {
 				// console.log(data);
 				// console.log(data[1]);
 				// console.log(data[2]);
-  var ul = document.getElementById("unorderlist");
+	var ul = document.getElementById("unorderlist");
+
+	// remove any existing childs in the list
+
+	// make the list of childNodes array
+	let childListArray = [].slice.call(ul.childNodes);
+
+	// go through the array and delete all the elements
+	childListArray.forEach(function(element){
+		ul.removeChild(element);
+	})
+
 //  var list = ul.createElement(li);
 for ( var i =0 ; i< data[1].length;i++){
 
