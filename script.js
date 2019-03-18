@@ -16,7 +16,7 @@ window.onload = function () {
 		let searchQuery = myinputform.q.value
 		console.log(searchQuery);
 		console.log("bye");
-		const endpoint = "https://en.wikipedia.org//w/api.php?action=opensearch&format=json&origin=*&search=" + searchQuery + "&limit=10";
+		const endpoint = "http://en.wikipedia.org/w/api.php?action=opensearch&format=json&origin=*&search=" + searchQuery + "&limit=10";
 		console.log(endpoint);
 		fetch(endpoint)
 			.then(function (response) {
